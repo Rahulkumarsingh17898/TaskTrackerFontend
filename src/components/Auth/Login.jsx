@@ -40,6 +40,7 @@ const Login = () => {
   });
 
   const handleSuccessfulLogin = (token, decodedToken) => {
+    // console.log("decodedToken: ",JSON.stringify(decodedToken));
     const user = {
       username: decodedToken.sub,
       roles: decodedToken.roles ? decodedToken.roles.split(",") : [],
@@ -50,7 +51,7 @@ const Login = () => {
     //store the token on the context state  so that it can be shared any where in our application by context provider
     setToken(token);
 
-    navigate("/dashboard");
+    navigate("/");
   };
 
   //function for handle login with credentials
@@ -115,7 +116,7 @@ const Login = () => {
 
   //if there is token  exist navigate  the user to the home page if he tried to access the login page
   useEffect(() => {
-    if (token) navigate("/dashboard");
+    if (token) navigate("/");
   }, [navigate, token]);
 
   //step1 will render the login form and step-2 will render the 2fa verification form

@@ -31,7 +31,7 @@ const Navbar = () => {
       <nav className="sm:px-10 px-4 flex w-full h-full items-center justify-between">
         <Link to="/">
           {" "}
-          <h3 className=" font-dancingScript text-logoText">Secure Notes</h3>
+          <h3 className=" font-dancingScript text-logoText">Task Tracker</h3>
         </Link>
         <ul
           className={`lg:static  absolute left-0  top-16 w-full lg:w-fit lg:px-0 sm:px-10 px-4  lg:bg-transparent bg-headerColor   ${
@@ -42,24 +42,16 @@ const Navbar = () => {
         >
           {token && (
             <>
-              <Link to="/notes">
+              <Link to="/dashboard">
                 <li
                   className={` ${
-                    pathName === "/notes" ? "font-semibold " : ""
+                    pathName === "/dashboard" ? "font-semibold " : ""
                   } py-2 cursor-pointer  hover:text-slate-300 `}
                 >
-                  My Notes
+                  My Projects
                 </li>
               </Link>
-              <Link to="/create-note">
-                <li
-                  className={` py-2 cursor-pointer  hover:text-slate-300 ${
-                    pathName === "/create-note" ? "font-semibold " : ""
-                  } `}
-                >
-                  Create Note
-                </li>
-              </Link>
+             
             </>
           )}
 

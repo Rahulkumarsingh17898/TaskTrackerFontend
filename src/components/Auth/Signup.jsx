@@ -96,7 +96,7 @@ const Signup = () => {
           <p className="text-slate-600 text-center">
             Enter your credentials to create new account
           </p>
-          <div className="flex items-center justify-between gap-1 py-5 ">
+          {/* <div className="flex items-center justify-between gap-1 py-5 ">
             <a
               href={`${apiUrl}/oauth2/authorization/google`}
               className="flex gap-1 items-center justify-center flex-1 border p-2 shadow-sm shadow-slate-200 rounded-md hover:bg-slate-300 transition-all duration-300"
@@ -119,9 +119,9 @@ const Signup = () => {
                 Login with Github
               </span>
             </a>
-          </div>
+          </div> */}
 
-          <Divider className="font-semibold">OR</Divider>
+          {/* <Divider className="font-semibold">OR</Divider> */}
         </div>
 
         <div className="flex flex-col gap-2">

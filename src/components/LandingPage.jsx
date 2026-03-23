@@ -2,9 +2,9 @@
 import { Link } from "react-router-dom";
 import Buttons from "../utils/Buttons";
 import { motion } from "framer-motion";
-import Brands from "./LandingPageCom/Brands/Brands";
+// import Brands from "./LandingPageCom/Brands/Brands";
 import State from "./LandingPageCom/State";
-import Testimonial from "./LandingPageCom/Testimonial/Testimonial";
+// import Testimonial from "./LandingPageCom/Testimonial/Testimonial";
 import { useMyContext } from "../store/ContextApi";
 
 const fadeInFromTop = {
@@ -29,15 +29,14 @@ const LandingPage = () => {
           animate="visible"
           variants={fadeInFromTop}
         >
-          Turn your thoughts into secure, organized notes And Faster.
+         Organize Your Life, One Task at a Time.
         </motion.h1>
         <h3 className="text-logoText md:text-2xl text-xl font-semibold text-slate-800 text-center">
-          The #1 secure note-taking app.
+          The ultimate tool to boost your productivity.
         </h3>
         <p className="text-slate-700 text-center sm:w-[80%] w-[90%] mx-auto">
-          Manage your notes effortlessly and securely. Just type, save, and
-          access them from anywhere with robust encryption and seamless
-          synchronization.
+         Keep track of everything you need to do. Create projects, set deadlines, 
+          prioritize tasks, and collaborate effortlessly to achieve your goals faster.
         </p>
         <motion.div
           initial="hidden"
@@ -47,14 +46,14 @@ const LandingPage = () => {
         >
           {token ? (
             <>
-              <Link to="/create-note">
+              <Link to="/dashboard">
                 <Buttons className="sm:w-52 w-44 bg-customRed font-semibold hover:scale-105 transition-all duration-200 cursor-pointer text-white px-10 py-3 rounded-sm">
-                  Create Note
+                  Create Project
                 </Buttons>
               </Link>
-              <Link to="/notes">
+              <Link to="/dashboard">
                 <Buttons className="sm:w-52 w-44 bg-btnColor font-semibold hover:scale-105 transition-all duration-200 cursor-pointer text-white px-10 py-3 rounded-sm">
-                  My Notes
+                  My Projects
                 </Buttons>
               </Link>
             </>
@@ -74,7 +73,7 @@ const LandingPage = () => {
           )}
         </motion.div>
         .
-        <div className="sm:pt-14 pt-0 xl:px-16 md:px-10">
+        {/* <div className="sm:pt-14 pt-0 xl:px-16 md:px-10">
           <h1 className="font-montserrat uppercase text-headerColor  xl:text-headerText md:text-4xl text-2xl  mx-auto text-center font-bold  w-full">
             More Reasons Company Around the world workable
           </h1>
@@ -89,7 +88,7 @@ const LandingPage = () => {
             </h1>
             <Testimonial />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

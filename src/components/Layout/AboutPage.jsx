@@ -14,12 +14,12 @@ const AboutPage = () => {
       <div className="md:w-1/2">
         <h1 className="text-4xl font-bold mb-4">About Us</h1>
         <p className="mb-4">
-          Welcome to SecureNote, your trusted companion for secure and private
+          Welcome to TaskTracker, your trusted companion for secure and private
           note-taking. We believe in providing a safe space where your thoughts
           and ideas are protected with the highest level of security. Our
           mission is to ensure that your notes are always accessible to you and
           only you. With state-of-the-art encryption and user-friendly features,
-          SecureNote is designed to keep your information confidential and
+          TaskTracker is designed to keep your information confidential and
           secure.
         </p>
 

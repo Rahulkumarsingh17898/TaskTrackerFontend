@@ -34,7 +34,7 @@ const OAuth2RedirectHandler = () => {
 
         // Delay navigation to ensure local storage operations complete
         setTimeout(() => {
-          console.log("Navigating to /notes");
+          console.log("Navigating to /dashboard");
           navigate('/dashboard');
         }, 100); // 100ms delay
       } catch (error) {

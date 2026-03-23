@@ -1,7 +1,7 @@
 import axios from "axios";
 
 console.log("API URL:", import.meta.env.VITE_APP_API_URL);
-console.log("API Bae URL:  'http://localhost:8090/api' ");
+console.log("API Base URL:  'http://localhost:8090/api' ");
 
 // Create an Axios instance
 const api = axios.create({

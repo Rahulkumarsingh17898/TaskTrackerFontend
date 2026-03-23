@@ -31,6 +31,7 @@ export const ContextProvider = ({ children }) => {
 
     if (user?.username) {
       try {
+        console.log("Inside context api");
         const { data } = await api.get(`/auth/user`);
         const roles = data.roles;
 
